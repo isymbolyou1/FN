@@ -1,25 +1,489 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="AYs-X4-FKC"/>
+                        <viewControllerLayoutGuide type="bottom" id="alM-Kz-bIZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB2-pW-ftP">
+                                <rect key="frame" x="81" y="166" width="159" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.30622421169411129" blue="0.61023579142247042" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="№1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ODl-cv-9yN" kind="modal" id="X24-AB-2Mo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoW-nD-v5Q">
+                                <rect key="frame" x="81" y="217" width="159" height="43"/>
+                                <color key="backgroundColor" red="0.49564584495110608" green="0.68736630024921674" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="№2">
+                                    <color key="titleColor" red="0.23803460529388387" green="1" blue="0.29022994055381846" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="zee-s7-k8s" kind="modal" id="ryv-xa-8yq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Добро Пожаловать!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXY-OC-GeX">
+                                <rect key="frame" x="81" y="28" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.090197819210000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qu-M7-tKA">
+                                <rect key="frame" x="20" y="57" width="280" height="101"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og8-9J-Ymu">
+                                <rect key="frame" x="81" y="268" width="159" height="43"/>
+                                <color key="backgroundColor" red="0.55294117647058827" green="0.96862745098039216" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="№3">
+                                    <color key="titleColor" red="1" green="0.40217215902921066" blue="0.41981190239720478" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ANu-N4-mZ1" kind="modal" id="bRG-1d-aKn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="infoLb" destination="0Qu-M7-tKA" id="c9c-pL-ilC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="186" y="342"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iG6-hy-rrL">
+            <objects>
+                <viewController id="zee-s7-k8s" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x3C-Uv-ddc"/>
+                        <viewControllerLayoutGuide type="bottom" id="hi9-K5-Xq5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zRB-aP-F91">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeU-7x-N8A">
+                                <rect key="frame" x="200" y="518" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.9662425569155364" green="0.71864648793851882" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Другой фокус">
+                                    <color key="titleColor" red="0.99021592830000005" green="0.96656118000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="4T9-yb-R9G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGv-a3-Lfs">
+                                <rect key="frame" x="20" y="518" width="141" height="30"/>
+                                <color key="backgroundColor" red="0.9662425569155364" green="0.71864648793851882" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Попробовать снова">
+                                    <color key="titleColor" red="0.99021592830000005" green="0.96656118000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Again2:" destination="zee-s7-k8s" eventType="touchUpInside" id="MrT-o9-JEr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moo-Ri-daP">
+                                <rect key="frame" x="20" y="28" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5H-E2-btN">
+                                <rect key="frame" x="109" y="70" width="103" height="42"/>
+                                <color key="backgroundColor" red="0.50404548015674133" green="0.69949579093181513" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Загадал">
+                                    <color key="titleColor" red="0.23803460530000001" green="1" blue="0.29022994060000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ComeUpWith2:" destination="zee-s7-k8s" eventType="touchUpInside" id="5L3-0x-752"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XS-aZ-IXQ">
+                                <rect key="frame" x="20" y="113" width="280" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Умножить на" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsM-ph-DFy">
+                                <rect key="frame" x="18" y="204" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dqm-XQ-hp9">
+                                <rect key="frame" x="203" y="201" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Умножить на" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofO-hk-eBf">
+                                <rect key="frame" x="20" y="273" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVm-Hx-3fc">
+                                <rect key="frame" x="203" y="235" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Разделить на" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBv-rP-ScZ">
+                                <rect key="frame" x="20" y="238" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Разделить на" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4J9-OL-gsp">
+                                <rect key="frame" x="20" y="304" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Разделить на" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VU-Ga-tUc">
+                                <rect key="frame" x="20" y="371" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkl-Rj-pyR">
+                                <rect key="frame" x="30" y="472" width="103" height="42"/>
+                                <color key="backgroundColor" red="0.50536755879625628" green="0.71021882787941459" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ввел">
+                                    <color key="titleColor" red="0.23803460530000001" green="1" blue="0.29022994060000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Rezult2:" destination="zee-s7-k8s" eventType="touchUpInside" id="mIt-YN-mN5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Умножить на" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMk-dQ-1ua">
+                                <rect key="frame" x="20" y="338" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3e-Tk-14L">
+                                <rect key="frame" x="203" y="269" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjL-kN-DZV">
+                                <rect key="frame" x="203" y="301" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUV-26-eva">
+                                <rect key="frame" x="203" y="334" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHZ-yM-SOg">
+                                <rect key="frame" x="203" y="367" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Введите результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3On-Fc-Lso">
+                                <rect key="frame" x="20" y="433" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0Q-OW-37q">
+                                <rect key="frame" x="203" y="429" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MA2-Hh-MFG">
+                                <rect key="frame" x="18" y="400" width="282" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njw-Xl-enR">
+                                <rect key="frame" x="146" y="466" width="154" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="CalcRezEd" destination="x0Q-OW-37q" id="uVV-Oc-ict"/>
+                        <outlet property="CalcRezLb" destination="3On-Fc-Lso" id="K4U-4N-5mH"/>
+                        <outlet property="DividedEd1" destination="fVm-Hx-3fc" id="17h-vw-NA9"/>
+                        <outlet property="DividedEd2" destination="wjL-kN-DZV" id="JAh-TJ-Jib"/>
+                        <outlet property="DividedEd3" destination="BHZ-yM-SOg" id="10w-al-Gby"/>
+                        <outlet property="DividedLb1" destination="aBv-rP-ScZ" id="7lL-kp-cm9"/>
+                        <outlet property="DividedLb2" destination="4J9-OL-gsp" id="iI2-Ju-5gB"/>
+                        <outlet property="DividedLb3" destination="5VU-Ga-tUc" id="qnZ-ju-QR9"/>
+                        <outlet property="MultiplicationEd1" destination="Dqm-XQ-hp9" id="OcC-Ay-orw"/>
+                        <outlet property="MultiplicationEd2" destination="w3e-Tk-14L" id="qeo-z2-ew4"/>
+                        <outlet property="MultiplicationEd3" destination="OUV-26-eva" id="VCH-i2-Xnm"/>
+                        <outlet property="MultiplicationLb1" destination="HsM-ph-DFy" id="0BD-Eg-rZ5"/>
+                        <outlet property="MultiplicationLb2" destination="ofO-hk-eBf" id="pP7-lq-J3Y"/>
+                        <outlet property="MultiplicationLb3" destination="WMk-dQ-1ua" id="n3Y-Dn-lcX"/>
+                        <outlet property="RezultLb2" destination="Njw-Xl-enR" id="cAV-zU-Yyc"/>
+                        <outlet property="SecondInfo2" destination="1XS-aZ-IXQ" id="TZR-g6-aJB"/>
+                        <outlet property="TInfoLb2" destination="MA2-Hh-MFG" id="XiR-4y-N6S"/>
+                        <outlet property="infoLb2" destination="Moo-Ri-daP" id="xPJ-Gv-Xrs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fye-bQ-JlG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="963"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4oG-0N-xfI">
+            <objects>
+                <viewController id="ANu-N4-mZ1" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="17f-qA-p4u"/>
+                        <viewControllerLayoutGuide type="bottom" id="HR7-0d-MSN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MV4-Yy-xM7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuR-Ol-Oa7">
+                                <rect key="frame" x="20" y="518" width="141" height="30"/>
+                                <color key="backgroundColor" red="0.95639662272341419" green="0.74050748671169098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Попробовать снова">
+                                    <color key="titleColor" red="0.99021592829995531" green="0.96656117997196433" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Again3:" destination="ANu-N4-mZ1" eventType="touchUpInside" id="Dny-Zi-NSU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZb-Yt-UdD">
+                                <rect key="frame" x="200" y="518" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.95639662272341419" green="0.74050748671169098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Другой фокус">
+                                    <color key="titleColor" red="0.99021592829995531" green="0.96656117997196433" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="aeP-Kb-yRP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jff-2b-4s0">
+                                <rect key="frame" x="20" y="28" width="280" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72s-Gh-Vlq">
+                                <rect key="frame" x="96" y="106" width="129" height="46"/>
+                                <color key="backgroundColor" red="0.47962678264252689" green="0.96862745098039216" blue="0.56769019021875833" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Загадал!">
+                                    <color key="titleColor" red="1" green="0.38465044977745932" blue="0.3894309452789394" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ComeUpWith3:" destination="ANu-N4-mZ1" eventType="touchUpInside" id="wo7-jE-Oes"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-9q-Jt0">
+                                <rect key="frame" x="20" y="273" width="280" height="89"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcD-Fp-NEj">
+                                <rect key="frame" x="112" y="370" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKN-ux-V6O">
+                                <rect key="frame" x="20" y="443" width="280" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Введите свой возраст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1V-Ve-DB2">
+                                <rect key="frame" x="72" y="160" width="177" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpL-zz-DRf">
+                                <rect key="frame" x="112" y="189" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1W-Ck-V4v">
+                                <rect key="frame" x="96" y="227" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.44705551649657771" green="0.96862745098039216" blue="0.53515509383080107" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ввел!">
+                                    <color key="titleColor" red="1" green="0.38465044977745932" blue="0.3894309452789394" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="EditOld3:" destination="ANu-N4-mZ1" eventType="touchUpInside" id="hzB-rD-w7b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INQ-2A-CDd">
+                                <rect key="frame" x="96" y="405" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.45652671344764473" green="0.96862745098039216" blue="0.56440469016898587" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ввел!">
+                                    <color key="titleColor" red="1" green="0.38465044977745932" blue="0.3894309452789394" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AddFinalNumber3:" destination="ANu-N4-mZ1" eventType="touchUpInside" id="xLd-pG-qFE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="EditNumber3" destination="PcD-Fp-NEj" id="4OL-Oq-DSk"/>
+                        <outlet property="EditOld3" destination="EpL-zz-DRf" id="3Gu-pD-hI1"/>
+                        <outlet property="OldLb" destination="C1V-Ve-DB2" id="ZpK-pR-Emz"/>
+                        <outlet property="Rezult3" destination="ZKN-ux-V6O" id="QlB-HD-LFT"/>
+                        <outlet property="SecondInfoLb3" destination="z2f-9q-Jt0" id="Pfb-B5-BHK"/>
+                        <outlet property="infoLb3" destination="Jff-2b-4s0" id="w0C-uO-XzM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1b-5t-RMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="963"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U88-Ty-FcR">
+            <objects>
+                <viewController id="ODl-cv-9yN" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T9x-jX-NhV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jm9-k3-Hv3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cQi-Q6-AUb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peG-8L-Hwe">
+                                <rect key="frame" x="200" y="530" width="100" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.85656877854299673" blue="0.98938082536068894" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Другой фокус">
+                                    <color key="titleColor" red="0.99021592830000005" green="0.96656118000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="kFr-rp-owR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqB-IE-MCj">
+                                <rect key="frame" x="20" y="530" width="141" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.85656877854299673" blue="0.98938082536068894" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Попробовать снова">
+                                    <color key="titleColor" red="0.99021592830000005" green="0.96656118000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Again1:" destination="ODl-cv-9yN" eventType="touchUpInside" id="pMp-6p-M6c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5o-Up-Hbe">
+                                <rect key="frame" x="20" y="28" width="275" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y98-JM-P9D">
+                                <rect key="frame" x="109" y="269" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9L-Ef-UiB">
+                                <rect key="frame" x="109" y="92" width="97" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.29031772577494219" blue="0.60187399851661683" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Загадал!"/>
+                                <connections>
+                                    <action selector="ComeUpWith1:" destination="ODl-cv-9yN" eventType="touchUpInside" id="ege-cD-3wq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-wW-csZ">
+                                <rect key="frame" x="23" y="366" width="275" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HE-xY-akD">
+                                <rect key="frame" x="109" y="316" width="97" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.29384007231756626" blue="0.59889687310596884" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ввел!"/>
+                                <connections>
+                                    <action selector="CalcRezult1:" destination="ODl-cv-9yN" eventType="touchUpInside" id="FRa-e5-xs1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVz-GP-xP4">
+                                <rect key="frame" x="23" y="133" width="275" height="128"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="EditNumber1" destination="y98-JM-P9D" id="xCv-uh-prw"/>
+                        <outlet property="InfoLb1" destination="m5o-Up-Hbe" id="Bvs-pY-g93"/>
+                        <outlet property="Rezult1" destination="mxT-wW-csZ" id="0NF-tX-Ygi"/>
+                        <outlet property="SecondInfoLb1" destination="SVz-GP-xP4" id="7gu-1m-69n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pch-Pg-0Wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="342"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4T9-yb-R9G"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -10,11 +10,14 @@
 		3DBB81141D68B575001184A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB81131D68B575001184A5 /* main.m */; };
 		3DBB81171D68B575001184A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB81161D68B575001184A5 /* AppDelegate.m */; };
 		3DBB811A1D68B575001184A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB81191D68B575001184A5 /* ViewController.m */; };
-		3DBB811D1D68B575001184A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB811B1D68B575001184A5 /* Main.storyboard */; };
 		3DBB81201D68B575001184A5 /* FocusNumber.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB811E1D68B575001184A5 /* FocusNumber.xcdatamodeld */; };
 		3DBB81221D68B575001184A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB81211D68B575001184A5 /* Assets.xcassets */; };
 		3DBB81251D68B575001184A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB81231D68B575001184A5 /* LaunchScreen.storyboard */; };
 		3DBB81301D68B576001184A5 /* FocusNumberUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB812F1D68B576001184A5 /* FocusNumberUITests.m */; };
+		3DBB813C1D68C50B001184A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB813A1D68C50B001184A5 /* Main.storyboard */; };
+		3DBB813E1D68CD94001184A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBB813D1D68CD94001184A5 /* Foundation.framework */; };
+		3DBB81401D68CDA5001184A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBB813F1D68CDA5001184A5 /* CoreGraphics.framework */; };
+		3DBB81421D68CDB2001184A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBB81411D68CDB2001184A5 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,6 @@
 		3DBB81161D68B575001184A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3DBB81181D68B575001184A5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3DBB81191D68B575001184A5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3DBB811C1D68B575001184A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DBB811F1D68B575001184A5 /* FocusNumber.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FocusNumber.xcdatamodel; sourceTree = "<group>"; };
 		3DBB81211D68B575001184A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DBB81241D68B575001184A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +44,10 @@
 		3DBB812B1D68B576001184A5 /* FocusNumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FocusNumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBB812F1D68B576001184A5 /* FocusNumberUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FocusNumberUITests.m; sourceTree = "<group>"; };
 		3DBB81311D68B576001184A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBB813B1D68C50B001184A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DBB813D1D68CD94001184A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DBB813F1D68CDA5001184A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DBB81411D68CDB2001184A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBB81421D68CDB2001184A5 /* UIKit.framework in Frameworks */,
+				3DBB81401D68CDA5001184A5 /* CoreGraphics.framework in Frameworks */,
+				3DBB813E1D68CD94001184A5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 		3DBB81061D68B575001184A5 = {
 			isa = PBXGroup;
 			children = (
+				3DBB81411D68CDB2001184A5 /* UIKit.framework */,
+				3DBB813F1D68CDA5001184A5 /* CoreGraphics.framework */,
+				3DBB813D1D68CD94001184A5 /* Foundation.framework */,
 				3DBB81111D68B575001184A5 /* FocusNumber */,
 				3DBB812E1D68B576001184A5 /* FocusNumberUITests */,
 				3DBB81101D68B575001184A5 /* Products */,
@@ -87,7 +99,7 @@
 				3DBB81161D68B575001184A5 /* AppDelegate.m */,
 				3DBB81181D68B575001184A5 /* ViewController.h */,
 				3DBB81191D68B575001184A5 /* ViewController.m */,
-				3DBB811B1D68B575001184A5 /* Main.storyboard */,
+				3DBB813A1D68C50B001184A5 /* Main.storyboard */,
 				3DBB81211D68B575001184A5 /* Assets.xcassets */,
 				3DBB81231D68B575001184A5 /* LaunchScreen.storyboard */,
 				3DBB81261D68B575001184A5 /* Info.plist */,
@@ -196,9 +208,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBB813C1D68C50B001184A5 /* Main.storyboard in Resources */,
 				3DBB81251D68B575001184A5 /* LaunchScreen.storyboard in Resources */,
 				3DBB81221D68B575001184A5 /* Assets.xcassets in Resources */,
-				3DBB811D1D68B575001184A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,20 +254,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3DBB811B1D68B575001184A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3DBB811C1D68B575001184A5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3DBB81231D68B575001184A5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3DBB81241D68B575001184A5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3DBB813A1D68C50B001184A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBB813B1D68C50B001184A5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
